@@ -1,0 +1,28 @@
+.wrapper {
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  min-width: 200px;
+}
+
+.navItem {
+    margin: 0 25px 10px;
+    min-width: 130px;
+    list-style: none;
+    text-align: center;
+    
+    &Link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 22px;
+      
+      &Active {
+        font-weight: 700;
+        color: #FF9100;
+      }
+    }
+  }

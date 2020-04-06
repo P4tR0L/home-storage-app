@@ -1,3 +1,15 @@
+## Home Storage App
+
+My first React App created in challenge ["React in 10 days"](https://reactw10dni.pl/) by [eduweb.pl](https://eduweb.pl/).
+
+## To Do
+There is a settings tab left to do and for sure small fixes.
+Form validation is furst step to do.
+The project will be developed soon.
+
+Icons used in project are made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](http://www.flaticon.com/).
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

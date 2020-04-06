@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.noItems {
+  margin: 75px 0 50px;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #d1d1d1;
+  line-height: 2;
+}
+
+.addButton {
+  display: block;
+  margin: 30px auto;
+  max-width: 160px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 8px 10px;
+  font-weight: 500;
+  background: none;
+  border: 2px solid #FF9100;
+  border-radius: 15px;
+  color: #FF9100;
+  cursor: pointer;
+}
