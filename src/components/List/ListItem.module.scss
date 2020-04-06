@@ -19,20 +19,11 @@
     animation: appear .5s ease;
 }
 
-.deleteItem {
-  width: 30px;
-  height: 30px;
-  background-color: #d87a00;
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  background-image: url('../../assets/images/delete.svg');
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 9999;
+.itemWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgContainer {
@@ -55,6 +46,22 @@
     border: 3px solid #FF9100;
     border-radius: 50%;
     transition: .3s linear;
+}
+
+.deleteItem {
+  width: 30px;
+  height: 30px;
+  background-color: #d87a00;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  cursor: pointer;
+  background-image: url('../../assets/images/delete.svg');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
 }
 
 .editItem {

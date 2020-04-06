@@ -12,11 +12,11 @@ const ListItem = ({ imageLink, itemName, itemValue, itemUnit, itemId }) => {
     <AppContext.Consumer>
       {(context) => (
         <div className={styles.wrapper}>
-          <div className={styles.deleteItem} onClick={() => context.deleteItem(itemId)}></div>
-          <div className={styles.item}>
+          <div className={styles.itemWrapper}>
             {
               imageLink ? (
                 <div className={styles.imgContainer}>
+                  <div className={styles.deleteItem} onClick={() => context.deleteItem(itemId)}></div>
                   <img
                     className={styles.itemImg}
                     src={imageLink}

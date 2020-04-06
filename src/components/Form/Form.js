@@ -97,7 +97,7 @@ class Form extends React.Component {
                 onChange={this.handleInputChange}
                 value={this.state.imageLink}
                 name="imageLink"
-                label="Product image"
+                label="Image URL"
               />
               <Button className={styles.addButton}>{this.props.item
                 ? "save changes"
