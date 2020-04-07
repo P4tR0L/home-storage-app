@@ -30,6 +30,7 @@ const ListItem = ({ imageLink, itemName, itemValue, itemUnit, itemId }) => {
                 </div>
               ) : (
                   <div className={styles.imgContainer}>
+                    <div className={styles.deleteItem} onClick={() => context.deleteItem(itemId)}></div>
                     <img
                       className={styles.itemImg}
                       src={productPlaceholder}

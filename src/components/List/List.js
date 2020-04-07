@@ -20,7 +20,7 @@ const List = ({ items }) => (
       </>
     ) : (
         <>
-          <h1 className={styles.noItems}>Your home storage is empty. Please add your fist product! <span role="img" aria-label="smile">😀</span></h1>
+          <h1 className={styles.noItems}>Your home storage is empty. Please add your first product! <span role="img" aria-label="smile">😀</span></h1>
           <Link className={styles.addButton}
             to="/add" >
             add product
