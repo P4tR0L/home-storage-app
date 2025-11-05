@@ -1,80 +1,268 @@
-## Home Storage App
+# 🏠 Home Storage App
 
-My first React App created in challenge ["React in 10 days"](https://reactw10dni.pl/) by [eduweb.pl](https://eduweb.pl/).
+A React-based web application for managing your home inventory and keeping track of your supplies. Never run out of essential items again!
 
-## To Do
-There is a settings tab left to do and for sure small fixes.
-Form validation is furst step to do.
-The project will be developed soon.
+[![React](https://img.shields.io/badge/React-16.13.1-blue.svg)](https://reactjs.org/)
+[![Node SASS](https://img.shields.io/badge/SASS-CSS_Modules-pink.svg)](https://sass-lang.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 
-Icons used in project are made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](http://www.flaticon.com/).
+---
 
+## 📖 Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [About The Project](#about-the-project)
+- [Features](#features)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the App](#running-the-app)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📋 About The Project
 
-### `yarn start`
+Home Storage App is an intuitive inventory management system designed to help you track products stored at home. Whether it's groceries, cleaning supplies, or any household items, this app helps you monitor quantities, set minimum thresholds, and automatically generate shopping lists.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project was created as part of the ["React in 10 days"](https://reactw10dni.pl/) challenge by [eduweb.pl](https://eduweb.pl/), serving as a practical learning experience in React development.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Why This App?
 
-### `yarn test`
+- **Never forget what you need to buy** - Automatic shopping list generation
+- **Track inventory levels** - Monitor current vs. minimum quantities
+- **Persistent storage** - All data saved locally in your browser
+- **Easy to use** - Clean, intuitive interface
+- **Visual organization** - Custom images for each product
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ✅ **Product Management** - Add, edit, and delete products with ease
+- 📊 **Inventory Tracking** - Monitor current quantities against minimum thresholds
+- 🛒 **Smart Shopping List** - Automatically lists items below minimum stock
+- 🖼️ **Custom Images** - Add product images or use placeholder graphics
+- 💾 **Local Persistence** - Data stored in browser localStorage
+- 🎨 **Responsive Design** - Works seamlessly on desktop and mobile
+- 🔄 **Real-time Updates** - Instant UI updates on data changes
+- 🎯 **Unit Flexibility** - Support for various units (g, kg, litres, bottles, pieces)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Built With
 
-### `yarn eject`
+This project leverages modern web technologies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **[React](https://reactjs.org/)** - v16.13.1 - UI library
+- **[React Router DOM](https://reactrouter.com/)** - v5.1.2 - Client-side routing
+- **[SCSS Modules](https://sass-lang.com/)** - Component-scoped styling
+- **[Create React App](https://create-react-app.dev/)** - Build tooling and configuration
+- **[UUID](https://www.npmjs.com/package/uuid)** - v7.0.3 - Unique ID generation
+- **[Lodash](https://lodash.com/)** - v4.17.15 - Utility functions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🚀 Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Follow these steps to get a local copy up and running.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Before you begin, ensure you have the following installed:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Node.js** (v12.0 or higher)
+  ```bash
+  node --version
+  ```
 
-### Code Splitting
+- **npm** or **yarn**
+  ```bash
+  npm --version
+  # or
+  yarn --version
+  ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Installation
 
-### Analyzing the Bundle Size
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/home-storage-app.git
+   ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+2. **Navigate to the project directory**
+   ```bash
+   cd home-storage-app
+   ```
 
-### Making a Progressive Web App
+3. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Running the App
 
-### Advanced Configuration
+**Development mode:**
+```bash
+npm start
+# or
+yarn start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Opens the app at [http://localhost:3000](http://localhost:3000) with hot-reload enabled.
 
-### Deployment
+**Production build:**
+```bash
+npm run build
+# or
+yarn build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Creates an optimized production build in the `build` folder.
 
-### `yarn build` fails to minify
+**Run tests:**
+```bash
+npm test
+# or
+yarn test
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Launches the test runner in interactive watch mode.
+
+---
+
+## 💡 Usage
+
+### Adding a Product
+
+1. Click **"Add Product"** or navigate to `/add`
+2. Fill in the product details:
+   - **Name** - Product name
+   - **Current Quantity** - How much you currently have
+   - **Minimum Quantity** - Alert threshold
+   - **Unit** - Select from g, kg, litres, bottles, pieces
+   - **Image URL** (optional) - Link to product image
+3. Click **"Save"** to add the product
+
+### Editing a Product
+
+1. Go to the **Product List** (home page)
+2. Click the **Edit icon** on any product card
+3. Modify the details
+4. Click **"Update"** to save changes
+
+### Shopping List
+
+1. Navigate to the **Shopping List** page
+2. View all items where current quantity < minimum quantity
+3. Use this list when shopping to restock items
+
+### Deleting a Product
+
+1. From the **Product List**, click the **Delete icon** on a product
+2. Confirm the deletion
+
+---
+
+## 📁 Project Structure
+
+```
+home-storage-app/
+├── public/                 # Static files
+│   ├── index.html         # HTML entry point
+│   ├── manifest.json      # PWA configuration
+│   └── ...
+├── src/
+│   ├── index.js           # Application entry point
+│   ├── context.js         # React Context for state management
+│   ├── views/             # Page components (routes)
+│   │   ├── Root/          # Main app wrapper with routing
+│   │   ├── ItemsView/     # Product list page
+│   │   ├── AddView/       # Add product page
+│   │   ├── EditView/      # Edit product page
+│   │   ├── ShoppingListView/  # Shopping list page
+│   │   └── SettingsView/  # Settings page (under development)
+│   ├── components/        # Reusable UI components
+│   │   ├── Header/        # Navigation header
+│   │   ├── Form/          # Product form (add/edit)
+│   │   ├── List/          # Product list display
+│   │   ├── ShoppingList/  # Shopping list components
+│   │   └── [Input, Select, Button, Title]
+│   └── assets/            # Images and static assets
+├── package.json           # Dependencies and scripts
+└── README.md             # Project documentation
+```
+
+---
+
+## 🗺️ Roadmap
+
+### Upcoming Features
+
+- [ ] **Form Validation** - Input validation and error messages
+- [ ] **Settings Page** - User preferences and configuration
+- [ ] **Export/Import Data** - Backup and restore functionality
+- [ ] **Categories** - Organize products by categories
+- [ ] **Search & Filter** - Find products quickly
+- [ ] **Dark Mode** - Theme toggle
+- [ ] **Multi-language Support** - Internationalization (i18n)
+- [ ] **Cloud Sync** - Optional cloud storage integration
+- [ ] **Barcode Scanner** - Quick product addition via barcode
+
+### Known Issues
+
+- Form validation is currently missing
+- Settings tab is not yet implemented
+
+See the [open issues](https://github.com/yourusername/home-storage-app/issues) for a full list of proposed features and known issues.
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` file for more information.
+
+---
+
+## 👤 Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+
+Project Link: [https://github.com/yourusername/home-storage-app](https://github.com/yourusername/home-storage-app)
+
+---
+
+## 🙏 Acknowledgments
+
+- **[eduweb.pl](https://eduweb.pl/)** - For the ["React in 10 days"](https://reactw10dni.pl/) challenge
+- **[Freepik](https://www.flaticon.com/authors/freepik)** - Icons used in the project from [Flaticon](http://www.flaticon.com/)
+- **[Create React App](https://github.com/facebook/create-react-app)** - Project bootstrapping
+- **[React Documentation](https://reactjs.org/)** - Excellent learning resources
+
+---
+
+<div align="center">
+  Made with ❤️ as a React learning project
+</div>
